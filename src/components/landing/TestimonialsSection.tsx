@@ -1,0 +1,77 @@
+import { Star, Quote } from "lucide-react";
+
+const testimonials = [
+  {
+    content: "CookedByJulz completely transformed how I approach content. I finally sound like myself online, and I'm actually consistent for the first time ever.",
+    author: "Sarah M.",
+    role: "Life Coach",
+    rating: 5,
+  },
+  {
+    content: "I was skeptical at first, but this isn't like other systems. It's genuinely personalized and so easy to follow. My engagement has doubled.",
+    author: "Marcus T.",
+    role: "Fitness Creator",
+    rating: 5,
+  },
+  {
+    content: "As a small business owner, I don't have time to overthink content. This system gave me clarity and confidence. Worth every penny.",
+    author: "Elena R.",
+    role: "Boutique Owner",
+    rating: 5,
+  },
+];
+
+const TestimonialsSection = () => {
+  return (
+    <section id="reviews" className="py-20 md:py-28 bg-card">
+      <div className="container">
+        <div className="text-center max-w-2xl mx-auto mb-16">
+          <span className="text-sm font-medium text-plum-500 uppercase tracking-wider">
+            Reviews
+          </span>
+          <h2 className="mt-4 text-3xl md:text-4xl font-serif font-semibold text-foreground">
+            What People Are Saying
+          </h2>
+          <p className="mt-4 text-lg text-muted-foreground">
+            Real results from real people who finally found their voice.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
+          {testimonials.map((testimonial, index) => (
+            <div
+              key={testimonial.author}
+              className="relative p-8 rounded-2xl bg-background shadow-soft hover:shadow-card transition-all duration-300"
+            >
+              <Quote className="absolute top-6 right-6 w-8 h-8 text-lavender-300" />
+              
+              <div className="flex gap-1 mb-6">
+                {[...Array(testimonial.rating)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-plum-500 text-plum-500" />
+                ))}
+              </div>
+
+              <p className="text-foreground leading-relaxed mb-6">
+                "{testimonial.content}"
+              </p>
+
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-lavender-300 flex items-center justify-center">
+                  <span className="text-sm font-semibold text-plum-700">
+                    {testimonial.author.split(' ').map(n => n[0]).join('')}
+                  </span>
+                </div>
+                <div>
+                  <p className="font-medium text-foreground">{testimonial.author}</p>
+                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default TestimonialsSection;

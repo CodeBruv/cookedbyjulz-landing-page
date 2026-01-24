@@ -14,10 +14,10 @@ const HeroSection = () => {
       <div className="container relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card/80 shadow-soft mb-8 animate-fade-up">
+          {/* <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card/80 shadow-soft mb-8 animate-fade-up">
             <Sparkles className="w-4 h-4 text-plum-500" />
             <span className="text-sm font-medium text-foreground">Your Voice, Amplified</span>
-          </div>
+          </div> */}
 
           {/* Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-foreground leading-tight mb-6 animate-fade-up-delay-1">
@@ -28,17 +28,17 @@ const HeroSection = () => {
           {/* Subtext */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-up-delay-2">
             A personalized content system built for individuals and businesses who want authentic, 
-            consistent content that sounds like <em>them</em> — every single time.
+            consistent content that sounds like <em>them</em>, every single time.
           </p>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up-delay-3">
-            <Button variant="hero" size="xl" className="w-full sm:w-auto" asChild>
+            {/* <Button variant="hero" size="xl" className="w-full sm:w-auto" asChild>
               <a href="#get-started">
                 Shop Digital Products
                 <ArrowRight className="w-5 h-5" />
               </a>
-            </Button>
+            </Button> */}
             <Button variant="heroOutline" size="xl" className="w-full sm:w-auto" asChild>
               <a href="#who-we-help">Learn More</a>
             </Button>

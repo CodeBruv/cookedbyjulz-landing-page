@@ -15,9 +15,17 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container flex items-center justify-between h-16 md:h-20">
-        <a href="#" className="font-serif text-xl md:text-2xl font-semibold text-foreground">
+        {/* <a href="#" className="font-serif text-xl md:text-2xl font-semibold text-foreground">
           CookedByJulz
+        </a> */}
+        <a href="#" className="flex items-center">
+        <img
+          src="/src/asset/logoo.png"
+          alt="CookedByJulz logo"
+          className="h-16 md:h-16 w-auto"
+         />
         </a>
+
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
@@ -33,9 +41,9 @@ const Header = () => {
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
-          <Button variant="hero" size="lg" asChild>
+          {/* <Button variant="hero" size="lg" asChild>
             <a href="#get-started">Shop Now</a>
-          </Button>
+          </Button> */}
         </div>
 
         {/* Mobile Menu Button */}

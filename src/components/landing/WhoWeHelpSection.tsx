@@ -26,9 +26,9 @@ const WhoWeHelpSection = () => {
     <section id="who-we-help" className="py-20 md:py-28 bg-card">
       <div className="container">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-sm font-medium text-plum-500 uppercase tracking-wider">
+          {/* <span className="text-sm font-medium text-plum-500 uppercase tracking-wider">
             Who We Help
-          </span>
+          </span> */}
           <h2 className="mt-4 text-3xl md:text-4xl font-serif font-semibold text-foreground">
             Built for People Who Care About Their Voice
           </h2>

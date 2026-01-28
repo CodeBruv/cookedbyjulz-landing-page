@@ -9,7 +9,7 @@ const differences = [
   {
     icon: Mic,
     title: "Human, Not Automated",
-    description: "Our system ensures your content sounds like you wrote it — because the foundation comes from you.",
+    description: "Our system ensures your content sounds like you wrote it, because the foundation comes from you.",
   },
   {
     icon: Clock,
@@ -28,9 +28,9 @@ const DifferenceSection = () => {
     <section id="difference" className="py-20 md:py-28 bg-plum-900 text-primary-foreground">
       <div className="container">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-sm font-medium text-lavender-400 uppercase tracking-wider">
+          {/* <span className="text-sm font-medium text-lavender-400 uppercase tracking-wider">
             What Makes Us Different
-          </span>
+          </span> */}
           <h2 className="mt-4 text-3xl md:text-4xl font-serif font-semibold">
             This Isn't Another Content Template
           </h2>

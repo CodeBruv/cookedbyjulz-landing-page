@@ -28,9 +28,9 @@ const ProblemSection = () => {
     <section id="the-problem" className="py-20 md:py-28 bg-background">
       <div className="container">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-sm font-medium text-plum-500 uppercase tracking-wider">
+          {/* <span className="text-sm font-medium text-plum-500 uppercase tracking-wider">
             The Problem
-          </span>
+          </span> */}
           <h2 className="mt-4 text-3xl md:text-4xl font-serif font-semibold text-foreground">
             Sound Familiar?
           </h2>

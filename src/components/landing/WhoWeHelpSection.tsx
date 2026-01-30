@@ -33,7 +33,7 @@ const WhoWeHelpSection = () => {
             Built for People Who Care About Their Voice
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Whether you're an individual creator or a growing brand, we help you show up consistently.
+            Whether you're an individual creator or a growing brand, we help you decide how to show up consistently.
           </p>
         </div>
 

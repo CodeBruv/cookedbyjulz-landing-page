@@ -13,7 +13,7 @@ const Footer = () => {
     { icon: MessageCircle, href: "https://wa.me/", label: "WhatsApp" },
     { icon: Instagram, href: "https://instagram.com/", label: "Instagram" },
     { icon: Facebook, href: "https://facebook.com/", label: "Facebook" },
-    { icon: TikTokIcon, href: "https://tiktok.com/", label: "TikTok" },
+    // { icon: TikTokIcon, href: "https://tiktok.com/", label: "TikTok" },
   ];
 
   const quickLinks = [

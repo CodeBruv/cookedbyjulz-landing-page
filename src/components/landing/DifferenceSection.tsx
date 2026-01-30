@@ -3,23 +3,23 @@ import { Heart, Mic, Clock, Layers } from "lucide-react";
 const differences = [
   {
     icon: Heart,
-    title: "Personalized, Not Templated",
-    description: "We don't give you cookie-cutter content. Everything is built around your unique voice, values, and goals.",
+    title: "Personalized Planning, Not Generic Templates",
+    description: "Your content isn’t built from one-size-fits-all templates. We create a personalized planning system based on your brand voice, goals, and audience so your topics, hooks, and captions actually fit you.",
   },
   {
     icon: Mic,
-    title: "Human, Not Automated",
-    description: "Our system ensures your content sounds like you wrote it, because the foundation comes from you.",
+    title: "Clarity-Driven, Not auto-Generated",
+    description: "This isn’t AI spitting out random captions. Your content comes from clear decisions made upfront so every hook, caption, and topic sounds intentional, aligned, and human.",
   },
   {
     icon: Clock,
-    title: "Built for Consistency",
-    description: "This isn't a one-time fix. It's a sustainable system designed for long-term, stress-free content creation.",
+    title: "Built for Repeatability",
+    description: "This isn’t a one-time content fix. It’s a repeatable planning system that helps you stay consistent without starting from scratch every time you post. Consistency becomes a result of clarity not effort.",
   },
   {
     icon: Layers,
-    title: "Simple & Flexible",
-    description: "No complicated frameworks or overwhelming processes. Just a clear, repeatable system that adapts to your life.",
+    title: "Structured, Yet Flexible",
+    description: "No overwhelming frameworks or rigid rules. Just a clear planning system that adapts to your schedule, supports your workflow, and makes creating content feel lighter over time.",
   },
 ];
 
@@ -35,7 +35,7 @@ const DifferenceSection = () => {
             This Isn't Another Content Template
           </h2>
           <p className="mt-4 text-lg text-lavender-300">
-            We built something that actually works for real people with real lives.
+            We've built a planning-first content system designed to remove guesswork, reduce mental load, and make consistency repeatable.
           </p>
         </div>
 

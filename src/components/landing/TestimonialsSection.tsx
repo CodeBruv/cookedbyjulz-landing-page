@@ -3,7 +3,7 @@ import { Star, Quote } from "lucide-react";
 const testimonials = [
   {
     content:
-      "CookedByJulz completely transformed how I approach content. I finally sound like myself online, and I'm actually consistent for the first time ever.",
+      "CookedByJulz completely changed how I approach content. Instead of thinking from scratch every time, I now have clear direction, defined topics, and a repeatable structure. I finally sound like myself and I’m consistent without forcing it.",
     link: "https://www.facebook.com/share/p/184v2HEyJP/",
     author: "Code Bruv",
     role: "Software Engineer",

@@ -22,13 +22,12 @@ const HeroSection = () => {
           {/* Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-foreground leading-tight mb-6 animate-fade-up-delay-1">
             Stay Consistent Online
-            <span className="block text-gradient">Without Losing Your Voice</span>
+            <span className="block text-gradient text-[0.7em] md:text-[0.75em]">Without Re-Deciding Everything Every Time You Post</span>
           </h1>
 
           {/* Subtext */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-up-delay-2">
-            A personalized content system built for individuals and businesses who want authentic, 
-            consistent content that sounds like <em>them</em>, every single time.
+           A personalized content system built on clarity, planning, and repeatability so your hooks, topics and captions are decided once and your content stays consistent without the mental load.
           </p>
 
           {/* CTAs */}

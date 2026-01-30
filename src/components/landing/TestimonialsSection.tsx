@@ -12,8 +12,8 @@ const testimonials = [
   {
     content:
       "I was skeptical at first, but this isn't like other systems. It's genuinely personalized and so easy to follow. My engagement has doubled.",
-    author: "MC Sleek",
-    role: "Boutique Owner",
+    author: "H-Glitters Couture",
+    role: "Fashion Designer",
     rating: 4,
   },
   {

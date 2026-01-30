@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Instagram, MessageCircle, Facebook } from "lucide-react";
+import { Instagram, Mail, Facebook } from "lucide-react";
 
 // Custom TikTok icon since lucide doesn't have one
 const TikTokIcon = () => (
@@ -10,9 +10,9 @@ const TikTokIcon = () => (
 
 const Footer = () => {
   const socialLinks = [
-    { icon: MessageCircle, href: "https://wa.me/", label: "WhatsApp" },
-    { icon: Instagram, href: "https://instagram.com/", label: "Instagram" },
-    { icon: Facebook, href: "https://facebook.com/", label: "Facebook" },
+    { icon: Mail, href: "mailto:cookedbyjulz@gmail.com", label: "Email" },
+    { icon: Instagram, href: "https://instagram.com/cookedbyjulz", label: "Instagram" },
+    { icon: Facebook, href: "https://facebook.com/cookedbyjulz", label: "Facebook" },
     // { icon: TikTokIcon, href: "https://tiktok.com/", label: "TikTok" },
   ];
 

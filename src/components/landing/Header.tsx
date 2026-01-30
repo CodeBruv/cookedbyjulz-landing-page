@@ -70,9 +70,9 @@ const Header = () => {
                 {link.label}
               </a>
             ))}
-            <Button variant="hero" size="lg" className="mt-2" asChild>
+            {/* <Button variant="hero" size="lg" className="mt-2" asChild>
               <a href="#get-started">Shop Now</a>
-            </Button>
+            </Button> */}
           </nav>
         </div>
       )}

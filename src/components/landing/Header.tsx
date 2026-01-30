@@ -17,7 +17,7 @@ const Header = () => {
       <div className="container flex items-center justify-between h-16 md:h-20">
         <a href="#" className="flex items-center">
         <img
-          src="/src/asset/logo.png"
+          src="/logo.png"
           alt="CookedByJulz logo"
           className="h-16 md:h-16 w-auto"
          />
@@ -36,12 +36,6 @@ const Header = () => {
             </a>
           ))}
         </nav>
-
-        <div className="hidden md:flex items-center gap-4">
-          {/* <Button variant="hero" size="lg" asChild>
-            <a href="#get-started">Shop Now</a>
-          </Button> */}
-        </div>
 
         {/* Mobile Menu Button */}
         <button
@@ -67,9 +61,6 @@ const Header = () => {
                 {link.label}
               </a>
             ))}
-            {/* <Button variant="hero" size="lg" className="mt-2" asChild>
-              <a href="#get-started">Shop Now</a>
-            </Button> */}
           </nav>
         </div>
       )}

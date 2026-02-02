@@ -19,7 +19,29 @@ const testimonials = [
   {
     content:
       "As a small business owner, I don't have time to overthink content. This system gave me clarity and confidence. Worth every penny.",
-    author: "Ruthie's Bakes & Chops",
+    author: "Ruthie's Bakes",
+    role: "Pastry Chef",
+    rating: 5,
+  },
+  {
+    content:
+      "CookedByJulz completely changed how I approach content. Instead of thinking from scratch every time, I now have clear direction, defined topics, and a repeatable structure. I finally sound like myself and I’m consistent without forcing it.",
+    link: "https://www.facebook.com/share/p/184v2HEyJP/",
+    author: "Code Bruv",
+    role: "Software Engineer",
+    rating: 5,
+  },
+  {
+    content:
+      "I was skeptical at first, but this isn't like other systems. It's genuinely personalized and so easy to follow. My engagement has doubled.",
+    author: "H-Glitters Couture",
+    role: "Fashion Designer",
+    rating: 4,
+  },
+  {
+    content:
+      "As a small business owner, I don't have time to overthink content. This system gave me clarity and confidence. Worth every penny.",
+    author: "Ruthie's Bakes",
     role: "Pastry Chef",
     rating: 5,
   },

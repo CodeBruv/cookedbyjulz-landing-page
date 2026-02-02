@@ -42,15 +42,15 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.author}
-              className="relative p-8 rounded-2xl bg-background shadow-soft hover:shadow-card transition-all duration-300"
+              className="relative p-8 rounded-2xl bg-plum-500 shadow-soft transition-all duration-300"
             >
-              <Quote className="absolute top-6 right-6 w-8 h-8 text-lavender-300" />
+              <Quote className="absolute top-6 right-6 w-8 h-8 text-background opacity-40" />
 
               <div className="flex gap-1 mb-6">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star
                     key={i}
-                    className="w-4 h-4 fill-plum-500 text-plum-500"
+                    className="w-4 h-4 fill-background text-background"
                   />
                 ))}
               </div>
@@ -60,30 +60,31 @@ const TestimonialsSection = () => {
                   href={testimonial.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-foreground leading-relaxed mb-6 block hover:underline"
+                  className="text-background leading-relaxed mb-6 block hover:underline"
                 >
                   “{testimonial.content}”
                 </a>
               ) : (
-                <p className="text-foreground leading-relaxed mb-6">
+                <p className="text-background leading-relaxed mb-6">
                   “{testimonial.content}”
                 </p>
               )}
 
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-lavender-300 flex items-center justify-center">
-                  <span className="text-sm font-semibold text-plum-700">
+                <div className="w-10 h-10 rounded-full bg-background flex items-center justify-center">
+                  <span className="text-sm font-semibold text-plum-500">
                     {testimonial.author
                       .split(" ")
                       .map((n) => n[0])
                       .join("")}
                   </span>
                 </div>
+
                 <div>
-                  <p className="font-medium text-foreground">
+                  <p className="font-medium text-background">
                     {testimonial.author}
                   </p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-background opacity-70">
                     {testimonial.role}
                   </p>
                 </div>

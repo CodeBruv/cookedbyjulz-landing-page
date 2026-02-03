@@ -16,7 +16,7 @@ const testimonials = [
       "The clarity around the number of posts each day was especially helpful. It became a simple routine: wake up and follow through.",
       "Even though I’m still working on improving consistency on our business page, the impact is already clear. I can see a noticeable difference on my dashboard, and overall, the plan helped me show up more consistently and at the right time.",
     ],
-    author: "Fanapay’s Kitchen",
+    author: "Fanapy’s Kitchen",
     role: "Restaurant Owner",
     rating: 5,
   },

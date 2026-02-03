@@ -153,3 +153,20 @@
     transform: translateY(0);
   }
 }
+.quote-wrap {
+  position: relative;
+}
+
+.quote-wrap::before {
+  content: "“";
+  position: absolute;
+  left: -0.4rem;
+  top: -0.2rem;
+}
+
+.quote-wrap::after {
+  content: "”";
+  position: absolute;
+  right: 0;
+  bottom: -0.2rem;
+}

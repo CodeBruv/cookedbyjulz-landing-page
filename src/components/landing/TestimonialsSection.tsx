@@ -10,11 +10,15 @@ const testimonials = [
     rating: 5,
   },
   {
-    content:
-      "The content plan gave me much-needed clarity. Having structure made it easier to stay consistent without overthinking. Engagement is improving, and more importantly, I now feel confident that I’m building in the right direction. The system makes posting feel simple, intentional, and achievable.",
-    author: "H-Glitters Couture",
-    role: "Fashion Designer",
-    rating: 4,
+    content:[
+      "The personalized content plan gave me a strong sense of structure and accountability. Knowing exactly what to post, how often, and when to post made showing up feel much easier.",
+      "Having a clear template to follow removed the stress of overthinking. I didn’t have to worry about timing or guessing what would work, the system already accounted for that, and I could see it reaching the right audience.",
+      "The clarity around the number of posts each day was especially helpful. It became a simple routine: wake up and follow through.",
+      "Even though I’m still working on improving consistency on our business page, the impact is already clear. I can see a noticeable difference on my dashboard, and overall, the plan helped me show up more consistently and at the right time.",
+    ],
+    author: "Fanapay’s Kitchen",
+    role: "Restaurant Owner",
+    rating: 5,
   },
   {
     content: [
@@ -38,15 +42,11 @@ const testimonials = [
     rating: 5,
   },
   {
-    content:[
-      "The personalized content plan gave me a strong sense of structure and accountability. Knowing exactly what to post, how often, and when to post made showing up feel much easier.",
-      "Having a clear template to follow removed the stress of overthinking. I didn’t have to worry about timing or guessing what would work, the system already accounted for that, and I could see it reaching the right audience.",
-      "The clarity around the number of posts each day was especially helpful. It became a simple routine: wake up and follow through.",
-      "Even though I’m still working on improving consistency on our business page, the impact is already clear. I can see a noticeable difference on my dashboard, and overall, the plan helped me show up more consistently and at the right time.",
-    ],
-    author: "Fanapay’s Kitchen",
-    role: "Restaurant Owner",
-    rating: 5,
+    content:
+      "The content plan gave me much-needed clarity. Having structure made it easier to stay consistent without overthinking. Engagement is improving, and more importantly, I now feel confident that I’m building in the right direction. The system makes posting feel simple, intentional, and achievable.",
+    author: "H-Glitters Couture",
+    role: "Fashion Designer",
+    rating: 4,
   },
   {
     content:[

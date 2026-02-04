@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const NewsletterSection = () => {
   const [email, setEmail] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   return (
     <section className="py-20 md:py-28 bg-background">
@@ -22,45 +23,59 @@ const NewsletterSection = () => {
             Join the community. Be first to know about new products and content tips.
           </p>
 
-          {/* ZOHO-POWERED FORM (UI UNCHANGED) */}
-          <form
-            action="https://zgpp-zppg.maillist-manage.com/weboptin.zc"
-            method="POST"
-            target="_self"
-            className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto"
-          >
-            {/* EMAIL FIELD */}
-            <Input
-              type="email"
-              name="CONTACT_EMAIL"
-              placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              className="h-12 px-4 bg-card border-border rounded-xl focus:ring-2 focus:ring-plum-500 focus:border-transparent"
-            />
+          {isSubmitted ? (
+            <div className="p-6 rounded-2xl bg-lavender-200 text-foreground">
+              <p className="font-medium">Welcome to the community! 🎉</p>
+              <p className="text-sm text-muted-foreground mt-2">
+                Check your inbox for a confirmation.
+              </p>
+            </div>
+          ) : (
+            <>
+              {/* Hidden iframe to swallow Zoho response */}
+              <iframe
+                name="zoho-hidden-frame"
+                title="Zoho Subscription"
+                style={{ display: "none" }}
+              />
 
-            {/* ZOHO REQUIRED HIDDEN FIELDS */}
-            <input type="hidden" name="submitType" value="optinCustomView" />
-            <input type="hidden" name="formType" value="QuickForm" />
-            <input type="hidden" name="zx" value="13674dbc8" />
-            <input type="hidden" name="zcvers" value="3.0" />
-            <input type="hidden" name="mode" value="OptinCreateView" />
-            <input type="hidden" name="zcld" value="1161fdb605ada5d4a" />
-            <input type="hidden" name="zctd" value="1161fdb605ada5b91" />
-            <input type="hidden" name="zc_trackCode" value="ZCFORMVIEW" />
-            <input
-              type="hidden"
-              name="zc_formIx"
-              value="3z9bc28c37612ca125881cf5dc35aeb6a4b93309dac2f4ad4f4cba5b0ef3d95799"
-            />
-            <input type="hidden" name="scriptless" value="yes" />
+              <form
+                action="https://zgpp-zppg.maillist-manage.com/weboptin.zc"
+                method="POST"
+                target="zoho-hidden-frame"
+                onSubmit={() => {
+                  setIsSubmitted(true);
+                  setEmail("");
+                }}
+                className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto"
+              >
+                <Input
+                  type="email"
+                  name="CONTACT_EMAIL"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  className="h-12 px-4 bg-card border-border rounded-xl focus:ring-2 focus:ring-plum-500 focus:border-transparent"
+                />
 
-            <Button variant="hero" size="lg" type="submit" className="gap-2">
-              Subscribe
-              <Send className="w-4 h-4" />
-            </Button>
-          </form>
+                <Button variant="hero" size="lg" type="submit" className="gap-2">
+                  Subscribe
+                  <Send className="w-4 h-4" />
+                </Button>
+
+                {/* Zoho required hidden fields */}
+                <input type="hidden" name="zx" value="13674dbc8" />
+                <input type="hidden" name="zcvers" value="3.0" />
+                <input type="hidden" name="mode" value="OptinCreateView" />
+                <input type="hidden" name="zcld" value="1161fdb605ada5d4a" />
+                <input type="hidden" name="zctd" value="1161fdb605ada5b91" />
+                <input type="hidden" name="formType" value="QuickForm" />
+                <input type="hidden" name="submitType" value="optinCustomView" />
+                <input type="hidden" name="zc_trackCode" value="ZCFORMVIEW" />
+              </form>
+            </>
+          )}
 
           <p className="mt-6 text-sm text-muted-foreground">
             No spam, ever. Unsubscribe anytime.

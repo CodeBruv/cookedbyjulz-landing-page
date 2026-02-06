@@ -37,7 +37,7 @@ const Footer = () => {
               without losing their authentic voice.
             </p>
             <Button variant="hero" size="lg" asChild>
-              <a href="https://shop.cookedbyjulz.com.ng/">Shop Digital Products</a>
+              <a href="https://shop.cookedbyjulz.com.ng/">Browse The Menu</a>
             </Button>
           </div>
 

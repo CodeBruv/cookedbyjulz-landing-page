@@ -6,14 +6,6 @@ import { useState } from "react";
 const NewsletterSection = () => {
   const [email, setEmail] = useState("");
 
-  // Simple redirect after submission
-  const handleSubmit = () => {
-    // wait a tiny bit to let form POST go through
-    setTimeout(() => {
-      window.location.href = "/thank-you.html";
-    }, 100);
-  };
-
   return (
     <section className="py-20 md:py-28 bg-background">
       <div className="container">
@@ -36,7 +28,6 @@ const NewsletterSection = () => {
             method="POST"
             target="_self"
             className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto"
-            onSubmit={handleSubmit}
           >
             {/* EMAIL FIELD */}
             <Input
